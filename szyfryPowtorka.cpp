@@ -145,5 +145,34 @@ string SzyfrPolowa(string w){
 
 
 int main(){
-  
+  /* ifstream plik("tj.txt");
+    ifstream plik2("sz.txt");
+    ofstream zapis("wyniki.txt");
+    string wyraz;
+    string klucz;
+
+    while(!plik.eof()){
+    plik >> wyraz;
+    plik2>>klucz;
+    zapis << szyfr(wyraz,klucz)<<endl;
+    }
+    To potem
+    plik.close;
+    plik2.close;
+    zapis.close;
+    */
+
+    cout << deszyfrZMatury("GPJNP","TOR") << endl;
+    cout << " " << endl;
+    cout << szyfrKwadratowy("iry_nmk_faa_ot_") << endl;
+    cout << " " << endl;
+    cout << szyfrKwadratowy("chujdupacyce")<< endl;
+    cout << " " << endl;
+    cout << szyfrZMatury("MARTA","TOR") << endl;
+    cout << " " << endl;
+    cout << szyfr("chuj");
+    cout << " " << endl;
+    cout << szyfr2("chuj",4);
+    cout << " " << endl;
+    return 0;
 }
